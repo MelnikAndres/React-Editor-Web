@@ -1,0 +1,50 @@
+body{
+    margin-bottom: 100px;
+}
+.father{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main{
+    display: grid;
+    box-shadow: -5px 5px 10px 0 gray;
+    width: 100%;
+}
+.mainDoble{
+    display: grid;
+    box-shadow: -5px 5px 10px 0 gray;
+    width: 49%;
+}
+h1,h2,p,h3,ul,ol,dl{
+    user-select: none;
+    min-height: 1rem;
+}
+
+h1:focus, h2:focus, p:focus, h3:focus,li:focus, dd:focus, dt:focus, ul:focus{
+    outline: 1px solid lightslategray;
+    user-select: all;
+}
+.plus{
+    position: relative;
+    border-radius: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    color : rgb(110,215,180);
+}
+.plus:hover{
+    opacity: 0.6;
+}
+li,dd,dt{
+    user-select: none;
+    min-height: 1rem;
+}
+.header{
+    padding-top: 45px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.headerContent{
+    color: gray;
+}

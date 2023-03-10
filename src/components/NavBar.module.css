@@ -1,0 +1,191 @@
+/* Style the navigation bar */
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(3deg, rgb(220,230,255) 40%, rgb(210,220,245));
+    overflow: auto;
+    border-bottom: 1px solid rgb(160,170,195);
+    box-shadow: -2px 0px 2px 0px black;
+    z-index: 2;
+}
+
+.prueba {
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.prueba:hover{
+    background-color: rgba(225,235,255,0.7);
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 2px rgba(125,145,165,1);
+}
+
+.prueba:active{
+    transition: all 0.1s ease;
+    background-color: rgba(245,255,255,0.7);
+}
+
+
+.subNav{
+    float: left;
+    animation-name: open;
+    animation-duration: 0.2s;
+}
+.subNavContent {
+    display: none;
+    position: fixed;
+    left: 0;
+    background-color:  white;
+    width: 35%;
+    z-index: 1;
+    height: 28px;
+    border: 1px solid lightgray;
+    box-shadow: -3px 3px 6px 0 lightgray;
+    margin-left: 60px;
+    margin-top: 2px;
+    animation-name: open;
+    animation-duration: 0.4s;
+}
+@keyframes open {
+    0%{height: 0}
+    100%{height: 30px}
+}
+.linkReceiver{
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgba(255,255,255,0.2);
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.linkReceiver:focus{
+    outline: none;
+}
+
+.selectedText{
+    margin: auto 0 auto 1rem;
+}
+.animate{
+    animation-name: toLeft;
+    animation-duration: 0.2s;
+}
+.lefted{
+    left:0;
+    transform: translate(0,0);
+    text-align: left;
+}
+.righted{
+    left:50%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+.preview{
+    position: fixed;
+    float: right;
+    right: 0;
+    border: none;
+}
+.previewIcon{
+    width: 36px;
+    height: 29px;
+    transform: translate(0,10%);
+}
+.prueba:hover .iconoRegular, .prueba:hover .iconoSubNav{
+    color: black;
+}
+.iconoSubNav{
+    position: relative;
+    width: 36px;
+    height: 29px;
+    top:2px;
+    color: rgb(110,120,145);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.iconoRegular{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-55%);
+    width: 36px;
+    color: rgb(110,120,145);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.subNavMarginContent{
+    display: none;
+    position: fixed;
+    left: 0;
+    background-color:  white;
+    width: fit-content;
+    z-index: 1;
+    height: fit-content;
+    border: 1px solid lightgray;
+    box-shadow: -3px 3px 6px 0 lightgray;
+    margin-left: 60px;
+    margin-top: 2px;
+    padding: 4px;
+    animation-name: open;
+    animation-duration: 0.4s;
+}
+
+.marginInput{
+    border: 1px solid gray;
+    max-width: 3rem;
+    margin: 1px;
+}
+.marginInput:focus{
+    outline: none;
+    border: 2px solid black;
+    margin: 0px;
+}
+.marginIcon{
+    margin: 0 2px;
+    color: rgb(110,120,145);
+}
+.linkReceiverIcon{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    transform: translate(0,-50%);
+    color: lightslategray;
+    opacity: 0.4;
+}
+.shadowInputColor{
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+}
+.botonSize{
+    position: relative;
+    border:1px solid gray;
+    background-color: rgb(220,230,255);
+    margin: 0 2px;
+    width: 22px;
+    height: 22px;
+    top:1px
+}
+.iconoSize{
+    position: relative;
+    color: gray;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.botonSize:hover{
+    background-color: rgb(230,240,255);
+}
+.botonSize:hover .iconoSize{
+    color:lightslategray;
+
+}
+.bgColorear{
+    position: fixed;
+    height: 36px;
+    right:48px;
+}
+

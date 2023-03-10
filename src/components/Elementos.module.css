@@ -1,0 +1,27 @@
+.animado {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {transform: translate(0,0)}
+    to {transform: translate(0,100%)}
+}
+
+.listPlus{
+    border-radius: 100px;
+    margin: 0 13px auto;
+    color : rgb(110,215,180);
+}
+.listPlus:hover{
+    opacity: 0.6;
+}
+
+.focused{
+    box-shadow: 0 0 4px 0 gray;
+}
+.draggable{
+    cursor: default !important;
+}

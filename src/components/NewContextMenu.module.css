@@ -1,0 +1,28 @@
+.menuDiv{
+    position: absolute;
+    background-color: red;
+    height: 200px;
+    width: 120px;
+    z-index: 10;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow: -5px 5px 8px 0 gray;
+}
+.opcion{
+    border: none;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(220,230,255);
+}
+.opcionDoble{
+    border: none;
+    height: 30px;
+    width: 60px;
+    background-color: rgb(220,230,255);
+}
+.opcion:hover{
+    background-color: rgb(235,240,255);
+}
+.opcionDoble:hover{
+    background-color: rgb(235,240,255);
+}

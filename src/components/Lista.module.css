@@ -1,0 +1,7 @@
+.lista{
+    position: relative;
+    margin: 0.5rem 0;
+    user-select: none;
+    width: fit-content;
+    min-height: 1rem;
+}

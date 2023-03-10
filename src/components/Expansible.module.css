@@ -1,0 +1,35 @@
+.expansible{
+    right: 0;
+    background-color: rgba(235,235,245,0.98);
+    position: absolute;
+    width: 60%;
+    height: 94.5%;
+}
+.expansible p{
+    text-align: center;
+}
+.expansible h1,.expansible h2,.expansible h3,.expansible p, .expansible ul, .expansible ol, .expansible dl{
+    margin-bottom: 0.5rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.conColor{
+    color: rgb(180,180,180);
+}
+.expansible h1,h2,p,h3,ul,ol,dl{
+    position: relative;
+    margin: 0.5rem 0;
+    user-select: none;
+    width: fit-content;
+    min-height: 1rem;
+}
+.expansible h1{
+    font-size: 2rem;
+}
+.expansible li,dd,dt{
+    position: relative;
+    user-select: none;
+    width: fit-content;
+    min-height: 1rem;
+}

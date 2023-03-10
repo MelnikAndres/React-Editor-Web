@@ -1,0 +1,22 @@
+.inputColor{
+    position: relative;
+    height: 36px;
+    width: 46px;
+    margin: -22px -6px;
+    transform: translate(0,-45%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.inputColor::-webkit-color-swatch{
+    border: none;
+    height: 0;
+    width: 0;
+}
+.color {
+    position: absolute;
+    margin: -3px -2px;
+    color: rgb(110,120,145);
+    z-index: 2;
+    width: 36px;
+}
